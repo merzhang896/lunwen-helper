@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: lunwen-helper
+    env: node
+    buildCommand: "npm install && npm run build && cd server && npm install"
+    startCommand: "cd server && npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PORT
+        value: 3001
+      - key: SITE_NAME
+        value: 论文助手
