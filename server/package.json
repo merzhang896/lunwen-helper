@@ -1,0 +1,22 @@
+{
+  "name": "lunwen-helper-server",
+  "version": "1.0.0",
+  "description": "论文助手后端API服务",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.1.1",
+    "nodemailer": "^8.0.4",
+    "openai": "^6.32.0",
+    "uuid": "^9.0.0"
+  }
+}
